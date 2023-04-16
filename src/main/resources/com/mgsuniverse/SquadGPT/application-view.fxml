@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mgsuniverse.SquadGPT.ApplicationController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="596.0" prefWidth="547.0">
+            <children>
+                <ChoiceBox fx:id="position" layoutX="54.0" layoutY="75.0" prefWidth="150.0" />
+                <Label layoutX="107.0" layoutY="51.0" text="Position:" />
+                <Slider fx:id="goalsSlider" layoutX="60.0" layoutY="193.0" max="800.0" />
+                <Label layoutX="100.0" layoutY="165.0" text="Min. Goals:" />
+                <Slider fx:id="assistSlider" layoutX="59.0" layoutY="289.0" max="400.0" />
+                <Label layoutX="99.0" layoutY="260.0" text="Min. Assits:" />
+                <CheckBox fx:id="playingCheckbox" layoutX="69.0" layoutY="440.0" mnemonicParsing="false" text="Currently Playing" />
+            <ChoiceBox fx:id="ability" layoutX="319.0" layoutY="75.0" prefWidth="150.0" />
+            <Label layoutX="378.0" layoutY="51.0" text="Ability:" />
+            <TextField fx:id="teamText" layoutX="320.0" layoutY="188.0" />
+            <Label layoutX="357.0" layoutY="165.0" text="Team/League:" />
+            <TextField fx:id="countryText" layoutX="321.0" layoutY="284.0" />
+            <Label layoutX="371.0" layoutY="260.0" text="Country:" />
+            <Button fx:id="searchButton" layoutX="355.0" layoutY="436.0" mnemonicParsing="false" onAction="#search" text="Run Search" />
+            <TextArea fx:id="resultArea" editable="false" layoutX="43.0" layoutY="487.0" prefHeight="94.0" prefWidth="448.0" promptText="Result:" wrapText="true" />
+            <Label fx:id="goalsText" layoutX="122.0" layoutY="205.0" text="0" textAlignment="CENTER" />
+            <Label fx:id="assistText" layoutX="126.0" layoutY="301.0" text="0" />
+            <Slider fx:id="ageSlider" layoutX="59.0" layoutY="371.0" max="45.0" min="19.0" />
+            <Label layoutX="104.0" layoutY="345.0" text="Max. Age:" />
+            <Label fx:id="ageText" layoutX="122.0" layoutY="385.0" prefHeight="18.0" prefWidth="16.0" text="19" />
+            <TextField fx:id="othersText" layoutX="322.0" layoutY="366.0" />
+            <Label layoutX="349.0" layoutY="345.0" text="Other Parameters:" />
+            <Button layoutX="200.0" layoutY="365.0" mnemonicParsing="false" onAction="#help" prefHeight="18.0" prefWidth="24.0" text="?" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
