@@ -13,5 +13,8 @@ SquadGPT is an application that will find you a soccer player based on certain p
 + Run the ApplicationStart.java file.
 + Enter your chosen parameters into the app and click the **Run Search** button.
 
+## Video
+https://youtu.be/Z1jODtUKEZ4
+
 ## Credits
 By Matteo Giovanni Fago
